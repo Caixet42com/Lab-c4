@@ -1,0 +1,21 @@
+version: '3'
+
+services: 
+  vaultwarden:
+    restart: always
+    container_name: vaultwarden-lab1
+    image: vaultwarden/server:latest
+    volumes:
+        - ./vw-data/:/data/
+    ports:
+        - 8062:80
+    environment:
+        - SMTP_HOST=mail.2comconsulting.com.br
+        - SMTP_FROM=git.dev@2comconsulting.com.br
+        - SMTP_FROM_NAME=VAULTWARDEN
+        - SMTP_SECURITY=starttls
+        - SMTP_PORT=587
+        - SMTP_USERNAME=git.dev@2comconsulting.com.br
+        - SMTP_PASSWORD=JZyG9E@2mmiU
+        - SMTP_TIMEOUT=30
+        - 
