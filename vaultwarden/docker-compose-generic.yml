@@ -18,4 +18,19 @@ services:
         - SMTP_USERNAME=git.dev@2comconsulting.com.br
         - SMTP_PASSWORD=JZyG9E@2mmiU
         - SMTP_TIMEOUT=30
-        - 
+        - SMTP_AUTH_MECHANISM="Plain"
+        - LOGIN_RATELIMIT_MAX_BURST=10
+        - LOGIN_RATELIMIT_SECONDS=60
+        - DOMAIN=https://vaultwarden.example.org
+        - INVITATION_ORG_NAME=HomeVault
+        - INVITATIONS_ALLOWED=true
+        - ADMIN_TOKEN=JZyG9E@2mmiU
+        - SINGUPS_ALLOWED=false
+        - SINGUPS_DOMAINS_WHITELIST=exampe.org
+        - SINGUPS_VERIFY=true
+        - SINGUPS_VERIFY_RESEND_TIME=3600
+        - SINGUPS_VERIFY_RESEND_LIMIT=6
+        - EMERGENCY_ACESS_ALLOWED=true
+        - SENDS_ALLOWED=true
+        - WEB_VAULT_ENABLED=true
+
