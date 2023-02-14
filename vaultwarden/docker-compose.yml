@@ -3,7 +3,7 @@ version: '3'
 services: 
   vaultwarden:
     restart: always
-    container_name: vaultwarden-lab1
+    container_name: vaultwarden
     image: vaultwarden/server:latest
     volumes:
         - ./vw-data/:/data/
